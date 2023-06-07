@@ -6,8 +6,21 @@ function remove_duplicates() {
   let unique = []
   let obj_strings = new Set()
 
-  for (let obj of ThemeList) {
+  for (let obj of ThemeList.list) {
     let ostring = JSON.stringify(obj)
+    let ignore = false
+
+    for (let key in obj) {
+      if (obj[key].length !== 7) {
+        console.log(`Ignored: ${obj[key]}`)
+        ignore = true
+        break
+      }
+    }
+
+    if (ignore) {
+      continue
+    }
 
     if (!obj_strings.has(ostring)) {
       unique.push(obj)
@@ -28,4 +41,4 @@ function save_file(objects) {
 }
 
 save_file(remove_duplicates())
-console.info(`Duplicates removed and file saved successfully.`)
+console.info(`Clean done.`)
