@@ -17,9 +17,17 @@ I haven't tested all the theme combinations so I can't assure they all look good
 ```js
 const ThemeList = ....
 
+// Get a random background + color combo
 let theme = ThemeList.random_theme()
+console.log(theme.background)
+console.log(theme.color)
 
-// Now you have theme.background and theme.color ready to use
-
-// Or use ThemeList.list directly
+// Or get a full item:
+let full_theme = ThemeList.random_item()
+console.log(theme.background)
+console.log(theme.color_1)
+console.log(theme.color_2)
+console.log(theme.color_3)
+console.log(theme.color_4)
+console.log(theme.color_5)
 ```
