@@ -12,4 +12,6 @@ const ThemeList = ....
 let theme = ThemeList.random_theme()
 
 // Now you have theme.background and theme.color ready to use
+
+// Or use ThemeList.list directly
 ```
