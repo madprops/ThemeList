@@ -30,4 +30,7 @@ console.log(theme.color_2)
 console.log(theme.color_3)
 console.log(theme.color_4)
 console.log(theme.color_5)
+
+// Or use ThemeList.list directly
+ThemeList.list[n]
 ```
