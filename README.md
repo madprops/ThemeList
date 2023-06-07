@@ -12,6 +12,8 @@ There's a function to get a random background and one of its 5 colors.
 
 So you can quickly make random simple themes (background color and text color).
 
+I haven't tested all the theme combinations so I can't assure they all look good.
+
 ```js
 const ThemeList = ....
 
