@@ -4,8 +4,6 @@
 
 ## How can I get two contrasting colors?
 
-You can use this list!
-
 Each item contains a background and 5 colors that should go well with it.
 
 ```js
