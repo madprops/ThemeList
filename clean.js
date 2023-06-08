@@ -12,9 +12,15 @@ function remove_duplicates() {
 
     for (let key in obj) {
       if (obj[key].length !== 7) {
-        console.log(`Ignored: ${obj[key]}`)
+        console.log(`Length: ${obj[key]}`)
         ignore = true
-        break
+      }
+
+      if (key.includes(`color_`)) {
+        if (obj[key] === obj.background) {
+          console.log(`Clash: ${obj[key]}`)
+          ignore = true
+        }
       }
     }
 
@@ -27,7 +33,7 @@ function remove_duplicates() {
       obj_strings.add(ostring)
     }
     else {
-      console.info(`Duplicate found: ${ostring}`)
+      console.info(`Duplicate: ${ostring}`)
     }
   }
 
