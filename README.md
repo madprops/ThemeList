@@ -23,7 +23,7 @@ console.log(theme.background)
 console.log(theme.color)
 
 // Or get a full item:
-let full_theme = ThemeList.random_item()
+let theme = ThemeList.random_item()
 console.log(theme.background)
 console.log(theme.color_1)
 console.log(theme.color_2)
