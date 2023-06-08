@@ -22,7 +22,7 @@ let theme = ThemeList.random_theme()
 console.log(theme.background)
 console.log(theme.color)
 
-// Or get a full item:
+// Or get a full item
 let theme = ThemeList.random_item()
 console.log(theme.background)
 console.log(theme.color_1)
@@ -32,5 +32,5 @@ console.log(theme.color_4)
 console.log(theme.color_5)
 
 // Or use ThemeList.list directly
-ThemeList.list[n]
+ThemeList.list[i]
 ```
