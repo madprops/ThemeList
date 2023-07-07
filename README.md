@@ -15,8 +15,6 @@ So you can quickly make random simple themes (background color and text color).
 I haven't tested all the theme combinations so I can't assure they all look good.
 
 ```js
-const ThemeList = ....
-
 // Get a random background + color combo
 let theme = ThemeList.random_theme()
 console.log(theme.background)
