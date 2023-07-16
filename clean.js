@@ -7,7 +7,22 @@ function remove_duplicates() {
   let obj_strings = new Set()
 
   for (let obj of ThemeList.list) {
-    let ostring = JSON.stringify(obj)
+    let set = new Set()
+    set.add(obj.background)
+    set.add(obj.color_1)
+    set.add(obj.color_2)
+    set.add(obj.color_3)
+    set.add(obj.color_4)
+    set.add(obj.color_5)
+
+    if (set.size !== 6) {
+      console.log(`Set Ignored`)
+      continue
+    }
+
+    let str = obj.background + ` `
+    str += [obj.color_1, obj.color_2, obj.color_3, obj.color_4, obj.color_5].sort().join(` `)
+    let ostring = JSON.stringify(str)
     let ignore = false
 
     for (let key in obj) {
